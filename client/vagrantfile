@@ -5,7 +5,7 @@ Vagrant.configure("2") do |config|
     hv.memory = "512"
   end
   config.vm.define "client" do |client|
-   client.vm.network :private_network, ip: "192.168.0.2"
+   client.vm.network :private_network, ip: "192.168.0.1"
    client.vm.hostname = "client"
   end
 end
